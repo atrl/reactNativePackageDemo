@@ -1,0 +1,76 @@
+__d('testApp/testApp.ios.js',function(global, require, module, exports) {  'use strict';
+
+
+
+
+var _reactNative=require('react-native/Libraries/react-native/react-native.js');var _reactNative2=babelHelpers.interopRequireDefault(_reactNative);var 
+
+
+
+
+
+
+
+
+testApp=function(_Component){babelHelpers.inherits(testApp,_Component);function testApp(){babelHelpers.classCallCheck(this,testApp);return babelHelpers.possibleConstructorReturn(this,Object.getPrototypeOf(testApp).apply(this,arguments));}babelHelpers.createClass(testApp,[{key:'_onPressItem',value:function _onPressItem()
+{
+console.log('press');
+_reactNative.NativeModules.ReactNativePackageManager.loadModule('testApp2');}},{key:'componentDidMount',value:function componentDidMount()
+
+
+{
+console.log('componentDidMount');}},{key:'componentWillUnmount',value:function componentWillUnmount()
+
+
+{
+console.log('componentWillUnmount');}},{key:'render',value:function render()
+
+
+{var _this2=this;
+return (
+_reactNative2.default.createElement(_reactNative.View,{style:styles.container},
+_reactNative2.default.createElement(_reactNative.TouchableOpacity,{
+onPress:function(){_this2._onPressItem();},
+activeOpacity:.6},
+
+_reactNative2.default.createElement(_reactNative.Text,{style:styles.welcome},'Welcome to React Native!'),
+
+
+_reactNative2.default.createElement(_reactNative.Text,{style:styles.instructions},'To get started, edit test.ios.js'),
+
+
+_reactNative2.default.createElement(_reactNative.Text,{style:styles.instructions},'Press Cmd+R to reload,',
+'\n','Cmd+D or shake for dev menu'))));}}]);return testApp;}(_reactNative.Component);
+
+
+
+
+
+
+
+
+
+var styles=_reactNative.StyleSheet.create({
+container:{
+flex:1,
+justifyContent:'center',
+alignItems:'center',
+backgroundColor:'#F5FCFF'},
+
+welcome:{
+fontSize:20,
+textAlign:'center',
+margin:10},
+
+instructions:{
+textAlign:'center',
+color:'#333333',
+marginBottom:5}});
+
+
+
+_reactNative.AppRegistry.registerComponent('testApp',function(){return testApp;});
+});
+;require("InitializeJavaScriptAppEngine");
+;require("testApp/testApp.ios.js");
+__SSTOKENSTRING = "@generated SignedSource<<0cd9ce31fdf097f0fa6e654cf65bf778>>";
